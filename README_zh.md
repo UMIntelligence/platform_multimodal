@@ -78,10 +78,21 @@ supervisorctl start all  # 启动所有管理进程
 ## 环境验证
 完成上述步骤后，可通过项目提供的自检脚本（如 `check_env.py`）或手动检查各服务端口连通性，确保所有依赖组件正常运行。
 
+
+## 🎉 Stay Tuned
+
+⭐️ Star our repository to stay up-to-date with exciting new features and improvements! Get instant notifications for new
+releases! 🌟
+
+<div align="center" style="margin-top:20px;margin-bottom:20px;">
+<img src="https://github.com/UMIntelligence/platform_multimodal/blob/main/assets/3ed4e296-fbf2-4618-9011-8eca26fe3461.gif" width="1200"/>
+</div>
+
 ## 快速开始
 
 ### 前提条件
 确保已安装 Docker 和 Docker Compose。
+
 
 ### 部署步骤
 1. **拉取项目**

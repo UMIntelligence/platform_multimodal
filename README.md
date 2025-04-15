@@ -78,10 +78,21 @@ supervisorctl start all  # Start all managed processes
 ## Environment Verification
 After completing the above steps, you can use the self-check script provided by the project (such as `check_env.py`) or manually check the connectivity of each service port to ensure that all dependent components are running normally.
 
+
+## 🎉 Stay Tuned
+
+⭐️ Star our repository to stay up-to-date with exciting new features and improvements! Get instant notifications for new
+releases! 🌟
+
+<div align="center" style="margin-top:20px;margin-bottom:20px;">
+<img src="https://github.com/UMIntelligence/platform_multimodal/blob/main/assets/3ed4e296-fbf2-4618-9011-8eca26fe3461.gif" width="1200"/>
+</div>
+
 ## Quick Start
 
 ### Prerequisites
 Ensure that Docker and Docker Compose are installed.
+
 
 ### Deployment Steps
 1. **Pull the Project**
