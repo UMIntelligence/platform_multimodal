@@ -87,24 +87,61 @@
 ### 环境验证  
 完成上述步骤后，可通过项目提供的自检脚本（如 `check_env.py`）或手动检查各服务端口连通性，确保所有依赖组件正常运行。
 
-## 开始
-    拉取项目：git clone https://github.com/ymzn3820/umi_platform_chat_module.git
-    构建：docker compose -f production.yml build
-    运行：docker compose -f production.yml up -d
-    检查：docker logs -f {containerId}, 如果没有报错信息，则运行成功。
 
-## 导航
-| 模块名称 | 链接 | 介绍|
-| -------- | ---- |---- |
-| 前端PC | [umi_platform_frontend](https://github.com/ymzn3820/umi_platform_frontend) | PC端前段代码仓库地址|
-| 小程序端 | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program) |小程序端代码仓库地址|
-| H5端 | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5) |H5端代码仓库地址|
-| 支付模块 | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module) |支付模块代码仓库地址|
-| 用户模块 | [umi_platform_user_module](https://github.com/ymzn3820/umi_platform_user_module) |用户模块代码仓库地址|
-| Chat模块 | [umi_platform_chat_module](https://github.com/ymzn3820/umi_platform_chat_module) |Chat模块代码仓库地址|
 
-[返回引导页](https://github.com/ymzn3820/umi_platform_pay_module)
+以下是优化后的 README 文档内容，在结构清晰性、可读性和专业性上进行了提升：
 
-## License
 
-BSD 3-Clause License
+# umi_platform_chat_module
+
+## 快速开始
+
+### 环境准备
+确保已安装 Docker 和 Docker Compose。
+
+### 部署步骤
+1. **拉取项目**  
+   ```bash
+   git clone https://github.com/UMIntelligence/platform_multimodal.git
+   ```
+
+2. **构建服务**  
+   使用生产环境配置文件构建镜像：  
+   ```bash
+   docker compose -f production.yml build
+   ```
+
+3. **启动服务**  
+   后台运行容器：  
+   ```bash
+   docker compose -f production.yml up -d
+   ```
+
+4. **状态检查**  
+   通过容器 ID 查看日志（可先通过 `docker ps` 命令获取目标容器 ID）：  
+   ```bash
+   docker logs -f {containerId}
+   # 无报错信息即表示服务运行正常
+   ```
+
+
+## 模块导航
+
+### 多端及功能模块仓库
+| 模块类型       | 模块名称       | 代码仓库链接                          | 说明                  |
+|----------------|----------------|---------------------------------------|-----------------------|
+| 前端平台       | PC 端前端      | [umi_platform_frontend](https://github.com/ymzn3820/umi_platform_frontend)       | PC 端前端代码仓库     |
+|                | 小程序端       | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program)    | 微信小程序代码仓库    |
+|                | H5 端          | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5)                     | H5 移动端代码仓库     |
+| 后端功能模块   | 支付模块       | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module)       | 支付系统核心模块      |
+|                | 用户模块       | [umi_platform_user_module](https://github.com/ymzn3820/umi_platform_user_module)       | 用户中心服务模块      |
+|                | Chat 模块      | [umi_platform_chat_module](https://github.com/ymzn3820/umi_platform_chat_module)      | 即时通讯核心模块      |
+
+### 返回入口
+[返回主项目引导页](https://github.com/ymzn3820/umi_platform_pay_module)  
+
+
+## 许可证
+本项目采用 **BSD 3-Clause License** 开源协议，详情见 [LICENSE](LICENSE) 文件。
+
+
