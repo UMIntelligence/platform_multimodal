@@ -1,8 +1,6 @@
-# 无忧秘书智脑Chat模块
+# 多模态平台
 
-无忧秘书智脑Pay相关模块。
-
-![无忧秘书智脑](https://umi-intelligence.oss-cn-shenzhen.aliyuncs.com/static/website/screenshot-ai.umi6.com-2024.03.13-10_15_32.png)
+![体验地址](https://umi-intelligence.oss-cn-shenzhen.aliyuncs.com/static/website/screenshot-ai.umi6.com-2024.03.13-10_15_32.png)
 
 ## 准备工作
 

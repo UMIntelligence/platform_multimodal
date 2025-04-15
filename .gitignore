@@ -1,0 +1,17 @@
+.idea
+*.log
+*.log.*
+*.pyc
+*.pri
+*.pub
+__pycache__/
+.idea/
+/venv/
+workspace.xml
+config.py
+option.*
+.pytest_cache
+g_config.conf
+.keys/
+*.sqlite3
+*.pdf

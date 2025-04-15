@@ -1,0 +1,24 @@
+version: '3'
+
+
+
+services:
+  server_chat_ym99:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: server_chat_ym99:v6.4.0
+    container_name: server_chat_ym99
+    ports:
+      - "28999:8000"
+    command: start
+
+  server_chat_ym98:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: server_chat_ym98:v6.4.0
+    container_name: server_chat_ym98
+    ports:
+      - "28998:8000"
+    command: start
