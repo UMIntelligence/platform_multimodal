@@ -1,3 +1,19 @@
+<div align="center">
+
+# 多模态平台
+**这是一个多模态平台.**
+
+
+[![Website][website-shield]][website-url]
+[![Dynamic JSON Badge][discord-shield]][discord-url]
+[![Matrix][matrix-shield]][matrix-url]
+<br>
+
+![platform multimodal](https://github.com/UMIntelligence/platform_multimodal/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe.png)
+</div>
+
+ComfyUI lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS.
+
 # 多模态平台
 
 ![体验地址](https://umi-intelligence.oss-cn-shenzhen.aliyuncs.com/static/website/screenshot-ai.umi6.com-2024.03.13-10_15_32.png)
