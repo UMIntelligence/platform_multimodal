@@ -9,7 +9,7 @@
 [![Matrix][matrix-shield]][matrix-url]
 <br>
 
-![platform multimodal](https://github.com/UMIntelligence/platform_multimodal/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe.png)
+![platform multimodal](https://github.com/UMIntelligence/platform_multimodal/blob/main/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe.png)
 </div>
 
 ComfyUI lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS.
