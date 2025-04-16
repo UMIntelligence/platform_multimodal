@@ -121,12 +121,12 @@ docker logs -f {containerId}
 ### Repositories of Multi - Terminal and Functional Modules
 | Module Type      | Module Name      | Code Repository Link                          | Description           |
 |------------------|------------------|-----------------------------------------------|-----------------------|
-| Front - end Platform | PC Front - end   | [umi_platform_frontend](https://github.com/ymzn3820/umi_platform_frontend)       | PC front - end code repository |
+| Front - end Platform | PC Front - end   | [platform_multimodal_frontend](https://github.com/UMIntelligence/platform_multimodal_frontend)       | PC front - end code repository |
 |                  | Mini - Program   | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program)    | WeChat mini - program code repository |
 |                  | H5 Terminal      | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5)                     | H5 mobile - end code repository |
 | Back - end Functional Modules | Payment Module   | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module)       | Core module of the payment system |
 |                  | User Module      | [umi_platform_user_module](https://github.com/ymzn3820/umi_platform_user_module)       | User center service module |
-|                  | Chat Module      | [umi_platform_chat_module](https://github.com/ymzn3820/umi_platform_chat_module)      | Core module of instant messaging |
+|                  | Chat Module      | [platform_multimodal](https://github.com/UMIntelligence/platform_multimodal)      | Core module of instant messaging |
 
 ### Return Entry
 [Return to the Main Project Guide Page](https://github.com/ymzn3820/umi_platform_pay_module)
