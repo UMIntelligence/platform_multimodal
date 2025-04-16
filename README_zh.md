@@ -121,7 +121,7 @@ docker logs -f {containerId}
 ### 多端及功能模块仓库
 | 模块类型       | 模块名称       | 代码仓库链接                          | 说明                  |
 |----------------|----------------|---------------------------------------|-----------------------|
-| 前端平台       | PC 端前端      | [umi_platform_frontend](https://github.com/ymzn3820/umi_platform_frontend)       | PC 端前端代码仓库     |
+| 前端平台       | PC 端前端      | [platform_multimodal_frontend](https://github.com/UMIntelligence/platform_multimodal_frontend)        | PC 端前端代码仓库     |
 |                | 小程序端       | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program)    | 微信小程序代码仓库    |
 |                | H5 端          | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5)                     | H5 移动端代码仓库     |
 | 后端功能模块   | 支付模块       | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module)       | 支付系统核心模块      |
