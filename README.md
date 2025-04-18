@@ -1,37 +1,37 @@
-# Multimodal Platform
+# 多模态平台
 <p align="center">
-  <a href="./README.md">English</a> |
-  <a href="./README_zh.md">简体中文</a> 
+  <a href="./README_cn.md">English</a> |
+  <a href="./README.md">简体中文</a> 
 </p>
 <div align="center">
   <br>
   <img src="https://github.com/UMIntelligence/platform_multimodal/blob/main/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe.png" alt="platform multimodal">
 </div>
 
-**Experience Address**: [https://ai.umi6.com](https://ai.umi6.com)
+**体验地址**：[https://ai.umi6.com](https://ai.umi6.com)
 
-**Introduction**: This is a multimodal platform. Before starting the project, please complete the environment preparation according to the following steps.
+**简介**：这是一个多模态平台，在启动项目前，请按照以下步骤完成环境准备。
 
-## Environment Preparation Steps
+## 环境准备步骤
 
-### 1. Completion of Configuration Items
-1. **Locate Configuration Items**: All pending configuration items in the project are marked with `TODO`. Mainstream IDEs support quick retrieval:
-    - **PyCharm**: Click the `TODO` panel at the bottom left to view the marked items.
-    - **VS Code**: Use the shortcut key `Ctrl + Shift + O` to search for the `TODO` keyword.
-    - **Other IDEs**: Refer to the `TODO` retrieval function of the corresponding tool.
-2. **Configuration Requirements**: Please complete key configuration items such as database connections, service addresses, and authentication information according to the actual environment.
+### 一、配置项补全
+1. **定位配置项**：项目中所有待完成的配置项已通过 `TODO` 标记，主流 IDE 支持快速检索：
+    - **PyCharm**：点击左下角的 `TODO` 面板查看标记项。
+    - **VS Code**：使用快捷键 `Ctrl + Shift + O` 搜索 `TODO` 关键字。
+    - **其他 IDE**：可参考对应工具的 `TODO` 检索功能。
+2. **配置要求**：请根据实际环境补全数据库连接、服务地址、认证信息等关键配置项。
 
-### 2. Preparation of Python Environment
-- **Version Requirement**: You must use **Python 3.10**.
-- **Verification Method**:
+### 二、Python 环境准备
+- **版本要求**：必须使用 **Python 3.10** 版本。
+- **验证方法**：
 ```bash
-python --version  # Ensure the output is Python 3.10.x
+python --version  # 确保输出为 Python 3.10.x
 ```
-- **Environment Recommendation**: It is recommended to use a virtual environment (such as `venv` or `conda`) to isolate project dependencies.
+- **环境建议**：推荐使用虚拟环境（如 `venv` 或 `conda`）隔离项目依赖。
 
-### 3. Port Configuration
-You need to release the ports in advance in the following scenarios to ensure there are no port conflicts:
-- **Firewall Rules (Linux Example)**:
+### 三、端口配置
+需提前在以下场景放行端口，确保无端口冲突：
+- **防火墙规则（Linux 示例）**：
 ```bash
 sudo firewall-cmd --add-ports=28999/tcp --permanent
 sudo firewall-cmd --add-ports=28998/tcp --permanent
@@ -42,41 +42,41 @@ sudo firewall-cmd --add-ports=8080/tcp --permanent
 sudo firewall-cmd --add-ports=29090/tcp --permanent
 sudo firewall-cmd --reload
 ```
-- **Cloud Server Security Group**: Add the above port whitelist to the security group configuration on platforms such as Alibaba Cloud and Tencent Cloud.
+- **云服务器安全组**：在阿里云、腾讯云等平台的安全组配置中添加上述端口白名单。
 
-### 4. Worker Process Configuration
-- **Configuration File**: In the project startup script (usually `start.sh` or `start.py`), customize the number of worker processes through the `WORKERS` parameter.
-- **Recommended Configuration**: Set it according to the number of CPU cores of the server. The recommended value is `Number of CPU cores × 2 + 1`.
+### 四、工作进程配置
+- **配置文件**：在项目启动脚本（通常为 `start.sh` 或 `start.py`）中，通过 `WORKERS` 参数自定义工作进程数量。
+- **推荐配置**：根据服务器 CPU 核心数设置，建议值为 `CPU 核心数 × 2 + 1`。
 
-### 5. Preparation of OpenSearch Vector Database
-Two deployment methods are supported. You can choose one of them:
-#### Option 1: Cloud Service (Recommended)
-Choose cloud provider services such as Alibaba Cloud OpenSearch or Amazon OpenSearch Service. After creating the instance, record the configuration parameters such as the endpoint and authentication information.
+### 五、OpenSearch 向量数据库准备
+支持两种部署方式，选择其一即可：
+#### 方案一：云端服务（推荐）
+选择阿里云 OpenSearch、亚马逊 OpenSearch Service 等云厂商服务，完成实例创建后，记录 endpoint、认证信息等配置参数。
 
-#### Option 2: Local Docker Deployment
-1. **Download Configuration File**: Ensure that the `install_opensearch.yml` file exists in the project root directory.
-2. **Start the Service**:
+#### 方案二：本地 Docker 部署
+1. **下载配置文件**：确保项目根目录存在 `install_opensearch.yml` 文件。
+2. **启动服务**：
 ```bash
-docker compose -f install_opensearch.yml build  # Build the image for the first time
-docker compose -f install_opensearch.yml up -d  # Run the container in the background
+docker compose -f install_opensearch.yml build  # 首次构建镜像
+docker compose -f install_opensearch.yml up -d  # 后台运行容器
 ```
-3. **Verify the Status**: Access `http://localhost:9200` to confirm the cluster health status.
+3. **验证状态**：访问 `http://localhost:9200` 确认集群健康状态。
 
-### 6. Supervisor Process Management
-1. **Install the Tool**:
-    - **Linux**: Use `sudo apt-get install supervisor` (Debian/Ubuntu).
-    - **Python Environment**: Use `pip install supervisor`.
-2. **Configuration File**:
-    - Place the provided `supervisord.conf` in the default configuration directory (usually `/etc/supervisor/`).
-    - Or specify a custom configuration path through `supervisord -c /path/to/supervisord.conf`.
-3. **Start the Service**:
+### 六、Supervisor 进程管理
+1. **安装工具**：
+    - **Linux**：使用 `sudo apt-get install supervisor`（Debian/Ubuntu）。
+    - **Python 环境**：使用 `pip install supervisor`。
+2. **配置文件**：
+    - 将项目提供的 `supervisord.conf` 放置于默认配置目录（通常为 `/etc/supervisor/`）。
+    - 或通过 `supervisord -c /path/to/supervisord.conf` 指定自定义配置路径。
+3. **服务启动**：
 ```bash
-supervisorctl reload  # Reload the configuration
-supervisorctl start all  # Start all managed processes
+supervisorctl reload  # 重载配置
+supervisorctl start all  # 启动所有管理进程
 ```
 
-## Environment Verification
-After completing the above steps, you can use the self-check script provided by the project (such as `check_env.py`) or manually check the connectivity of each service port to ensure that all dependent components are running normally.
+## 环境验证
+完成上述步骤后，可通过项目提供的自检脚本（如 `check_env.py`）或手动检查各服务端口连通性，确保所有依赖组件正常运行。
 
 
 ## 🎉 Stay Tuned
@@ -88,51 +88,48 @@ releases! 🌟
 <img src="https://github.com/UMIntelligence/platform_multimodal/blob/main/assets/3ed4e296-fbf2-4618-9011-8eca26fe3461.gif" width="1200"/>
 </div>
 
-## Quick Start
+## 快速开始
 
-### Prerequisites
-Ensure that Docker and Docker Compose are installed.
+### 前提条件
+确保已安装 Docker 和 Docker Compose。
 
 
-### Deployment Steps
-1. **Pull the Project**
+### 部署步骤
+1. **拉取项目**
 ```bash
 git clone https://github.com/UMIntelligence/platform_multimodal.git
 ```
-2. **Build the Service**
-Build the image using the production environment configuration file:
+2. **构建服务**
+使用生产环境配置文件构建镜像：
 ```bash
 docker compose -f production.yml build
 ```
-3. **Start the Service**
-Run the container in the background:
+3. **启动服务**
+后台运行容器：
 ```bash
 docker compose -f production.yml up -d
 ```
-4. **Status Check**
-View the logs through the container ID (you can first obtain the target container ID through the `docker ps` command):
+4. **状态检查**
+通过容器 ID 查看日志（可先通过 `docker ps` 命令获取目标容器 ID）：
 ```bash
 docker logs -f {containerId}
-# No error message indicates that the service is running normally
+# 无报错信息即表示服务运行正常
 ```
 
-## Module Navigation
+## 模块导航
 
-### Repositories of Multi - Terminal and Functional Modules
-| Module Type      | Module Name      | Code Repository Link                          | Description           |
-|------------------|------------------|-----------------------------------------------|-----------------------|
-| Front - end Platform | PC Front - end   | [platform_multimodal_frontend](https://github.com/UMIntelligence/platform_multimodal_frontend)       | PC front - end code repository |
-|                  | Mini - Program   | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program)    | WeChat mini - program code repository |
-|                  | H5 Terminal      | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5)                     | H5 mobile - end code repository |
-| Back - end Functional Modules | Payment Module   | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module)       | Core module of the payment system |
-|                  | User Module      | [umi_platform_user_module](https://github.com/ymzn3820/umi_platform_user_module)       | User center service module |
-|                  | Chat Module      | [platform_multimodal](https://github.com/UMIntelligence/platform_multimodal)      | Core module of instant messaging |
+### 多端及功能模块仓库
+| 模块类型       | 模块名称       | 代码仓库链接                          | 说明                  |
+|----------------|----------------|---------------------------------------|-----------------------|
+| 前端平台       | PC 端前端      | [platform_multimodal_frontend](https://github.com/UMIntelligence/platform_multimodal_frontend)        | PC 端前端代码仓库     |
+|                | 小程序端       | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program)    | 微信小程序代码仓库    |
+|                | H5 端          | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5)                     | H5 移动端代码仓库     |
+| 后端功能模块   | 支付模块       | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module)       | 支付系统核心模块      |
+|                | 用户模块       | [umi_platform_user_module](https://github.com/ymzn3820/umi_platform_user_module)       | 用户中心服务模块      |
+|                | Chat 模块      | [umi_platform_chat_module](https://github.com/ymzn3820/umi_platform_chat_module)      | 即时通讯核心模块      |
 
-### Return Entry
-[Return to the Main Project Guide Page](https://github.com/ymzn3820/umi_platform_pay_module)
+### 返回入口
+[返回主项目引导页](https://github.com/ymzn3820/umi_platform_pay_module)
 
-## License
-This project uses the **BSD 3 - Clause License** open - source license. For details, see the [LICENSE](LICENSE) file.
-
-
-
+## 许可证
+本项目采用 **BSD 3 - Clause License** 开源协议，详情见 [LICENSE](LICENSE) 文件。
