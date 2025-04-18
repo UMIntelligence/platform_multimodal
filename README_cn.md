@@ -1,4 +1,4 @@
-# Multimodal Platform
+# Content Management System
 <p align="center">
   <a href="./README_cn.md">English</a> |
   <a href="./README.md">简体中文</a> 

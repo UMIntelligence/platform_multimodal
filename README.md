@@ -1,4 +1,4 @@
-# 多模态平台
+# 内容管理系统
 <p align="center">
   <a href="./README_cn.md">English</a> |
   <a href="./README.md">简体中文</a> 
