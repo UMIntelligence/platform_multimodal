@@ -121,15 +121,15 @@ docker logs -f {containerId}
 ### 多端及功能模块仓库
 | 模块类型       | 模块名称       | 代码仓库链接                          | 说明                  |
 |----------------|----------------|---------------------------------------|-----------------------|
-| 前端平台       | PC 端前端      | [platform_multimodal_frontend](https://github.com/UMIntelligence/platform_multimodal_frontend)        | PC 端前端代码仓库     |
+| 前端平台       | PC 端前端      | [umi_ai_cms_frontend](https://github.com/UMIntelligence/platform_multimodal_frontend)        | PC 端前端代码仓库     |
 |                | 小程序端       | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program)    | 微信小程序代码仓库    |
 |                | H5 端          | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5)                     | H5 移动端代码仓库     |
 | 后端功能模块   | 支付模块       | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module)       | 支付系统核心模块      |
 |                | 用户模块       | [umi_platform_user_module](https://github.com/ymzn3820/umi_platform_user_module)       | 用户中心服务模块      |
-|                | Chat 模块      | [umi_platform_chat_module](https://github.com/ymzn3820/umi_platform_chat_module)      | 即时通讯核心模块      |
+|                | Chat 模块      | [umi_ai_cms](https://github.com/ymzn3820/umi_platform_chat_module)      | 即时通讯核心模块      |
 
-### 返回入口
-[返回主项目引导页](https://github.com/ymzn3820/umi_platform_pay_module)
+
 
 ## 许可证
 本项目采用 **BSD 3 - Clause License** 开源协议，详情见 [LICENSE](LICENSE) 文件。
+
