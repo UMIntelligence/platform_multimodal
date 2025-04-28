@@ -5,7 +5,7 @@
 </p>
 <div align="center">
   <br>
-  <img src="https://github.com/UMIntelligence/platform_multimodal/blob/main/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe.png" alt="platform multimodal">
+  <img src="https://github.com/umi-AIGC-saas/platform_multimodal/blob/main/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe.png" alt="platform multimodal">
 </div>
 
 **体验地址**：[https://ai.umi6.com](https://ai.umi6.com)
@@ -85,7 +85,7 @@ supervisorctl start all  # 启动所有管理进程
 releases! 🌟
 
 <div align="center" style="margin-top:20px;margin-bottom:20px;">
-<img src="https://github.com/UMIntelligence/platform_multimodal/blob/main/assets/3ed4e296-fbf2-4618-9011-8eca26fe3461.gif" width="1200"/>
+<img src="https://github.com/umi-AIGC-saas/platform_multimodal/blob/main/assets/3ed4e296-fbf2-4618-9011-8eca26fe3461.gif" width="1200"/>
 </div>
 
 ## 快速开始
@@ -97,7 +97,7 @@ releases! 🌟
 ### 部署步骤
 1. **拉取项目**
 ```bash
-git clone https://github.com/UMIntelligence/platform_multimodal.git
+git clone https://github.com/umi-AIGC-saas/platform_multimodal.git
 ```
 2. **构建服务**
 使用生产环境配置文件构建镜像：
@@ -121,7 +121,7 @@ docker logs -f {containerId}
 ### 多端及功能模块仓库
 | 模块类型       | 模块名称       | 代码仓库链接                          | 说明                  |
 |----------------|----------------|---------------------------------------|-----------------------|
-| 前端平台       | PC 端前端      | [umi_ai_cms_frontend](https://github.com/UMIntelligence/platform_multimodal_frontend)        | PC 端前端代码仓库     |
+| 前端平台       | PC 端前端      | [umi_ai_cms_frontend](https://github.com/umi-AIGC-saas/platform_multimodal_frontend)        | PC 端前端代码仓库     |
 |                | 小程序端       | [umi_platform_mini_program](https://github.com/ymzn3820/umi_platform_mini_program)    | 微信小程序代码仓库    |
 |                | H5 端          | [umi_platform_h5](https://github.com/ymzn3820/umi_platform_h5)                     | H5 移动端代码仓库     |
 | 后端功能模块   | 支付模块       | [umi_platform_pay_module](https://github.com/ymzn3820/umi_platform_pay_module)       | 支付系统核心模块      |
